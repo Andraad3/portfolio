@@ -1,0 +1,94 @@
+.imagem img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+.perfil-img {
+    width: 200px;
+    height: 200px;
+}
+
+.container{
+    padding-top: 55px;
+}
+
+#projetos{
+    padding-top: 55px;
+}
+
+/* Habilidades */
+
+#container-habilidade>h2 {
+    text-align: center;
+    margin: 30px 30px;
+}
+
+.habilidade-item {
+    padding-left: 50px;
+    display: inline-grid;
+    margin-bottom: 10px;
+}
+
+.habilidade-item>img {
+    place-self: center;
+    transition: 0.2s;
+}
+
+.habilidade-item>img:hover {
+    transform: scale(1.2);
+    filter: none;
+}
+
+.habilidade-item>h3 {
+    margin: 15px 0;
+    justify-self: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* Contato */
+
+.contato{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.redes-sociais{
+    padding: 50px 200px;
+    width: 50%;
+}
+
+.contato-form{
+    width: 50%;
+}
+
+.contato-item {
+    margin: 10px;
+    justify-content: end;
+    display: flex;
+}
+
+.contato-item a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .habilidade-item {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .redes-sociais, .contato-form{
+        width: 100%;
+    }
+
+    .redes-sociais{
+        padding: 0;
+    }
+    
+}
